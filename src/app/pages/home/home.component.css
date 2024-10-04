@@ -1,0 +1,38 @@
+.container {
+    margin: auto;
+    text-align: center;
+}
+
+.container > img {
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    filter: opacity(0.5);
+}
+
+.container > .img2 {
+    left: 0;
+    top: 0;
+    transform: rotateY(180deg);
+}
+
+.container > .img1 {
+    right: 0;
+    top: 0;
+    
+}
+
+.container > h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.container > h1 > b {
+    color: var(--details-color);
+}
+
+.container > p {
+    color: var(--terciary-color);
+    margin-bottom: 150px;
+}
