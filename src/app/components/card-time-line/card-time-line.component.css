@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.562);
+    border-radius: 60px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.container > .img {
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.container > .img > img {
+    width: 100px;
+}
+
+.container > .content {
+    padding: 20px;
+    text-align: left;
+}
+
+.container > .content > h1 {
+    text-transform: uppercase;
+}
+
+.container > .content > p {
+    font-size: .6rem;
+    overflow: hidden;
+}   

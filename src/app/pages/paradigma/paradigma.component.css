@@ -1,0 +1,101 @@
+.container {
+    width: 950px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: justify;
+}
+
+.container > h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+
+.container > .header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.container > .header > .content-header > h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.container > .header > .img-header > img {
+    width: 400px;
+    border-radius: 25px;
+}
+
+.container > .section1 {
+    display: flex;
+    gap: 30px;
+    text-indent: 20px;
+    margin-bottom: 100px;
+}
+
+.container > .section2 {
+    display: flex;
+    flex-flow: row-reverse;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.container > .section2 > .content-section2 > h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.container > .section2 > .img-section2 > img {
+    width: 400px;
+    border-radius: 25px;
+}
+
+.container > .linha-do-tempo {
+    text-align: center;
+}
+
+.container > .linha-do-tempo > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.container > .linha-do-tempo > .time-line {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.container > .linha-do-tempo > .time-line > span {
+    background-color: #333439;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 23px;
+    width: 115px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container > .linha-do-tempo > .time-line > .cards {
+    display: flex;
+    flex-flow: column;
+}
+
+.container > .linha-do-tempo > .time-line > .cards > .line {
+    position: absolute;
+    right: 47%;
+    width: 100px;
+}
+
+.container > .linha-do-tempo > .time-line > .cards > .card1 {
+    position: relative;
+    left: 250px;
+}
+
+.container > .linha-do-tempo > .time-line > .cards > .card2 {
+    position: relative;
+    right: 250px;
+}

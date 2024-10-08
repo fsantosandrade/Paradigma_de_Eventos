@@ -1,0 +1,65 @@
+.container > .section1 {
+    display: flex;
+    gap: 30px;
+    text-indent: 20px;
+    margin-bottom: 100px;
+}
+
+.container > .section2 {
+    display: flex;
+    flex-flow: row-reverse;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.container > .section2 > .content-section2 > h2 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    text-align: left;
+}
+
+.container > .section2 > .img-section2 > img {
+    width: 400px;
+    border-radius: 25px;
+}
+
+.container > .section3 {
+    background-color: var(--background-color);
+    padding: 20px 0;
+}
+
+.container > .section3 > .content-section3 {
+    margin: 20px 0;
+}
+
+.container > .section3 > h2 {
+    margin: 30px 0 50px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.container > .section3 > .content-section3 > .cards-vantagens {
+    padding: 20px;
+    border-radius: 40px;
+    background-color: rgb(53, 50, 50);
+    width: 30%;
+    margin: auto;
+    transition: .3s ease;
+}
+
+.container > .section3 > .content-section3 > .cards-vantagens:hover {
+    cursor: pointer;
+    width: 40%;
+}
+
+.container > .section3 > .content-section3 > .cards-vantagens > h3 {
+    text-align: center;
+    color: white;
+    margin: 15px;
+}
+
+.container > .section3 > .content-section3 > .cards-vantagens > .cards {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}

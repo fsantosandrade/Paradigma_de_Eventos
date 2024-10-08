@@ -1,0 +1,88 @@
+<div class="container">
+    <h1>Typescript</h1>
+    <div class="header">
+        <div class="content-header">
+            <h2>O que é?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at iste eaque eveniet reprehenderit laboriosam asperiores officiis porro, doloribus accusamus debitis tempora adipisci corrupti magnam reiciendis ea, voluptate ad veniam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque provident praesentium ad ipsum magni facere, similique temporibus! Ipsa illo, necessitatibus, quas, placeat minus facere delectus impedit ducimus nulla quaerat eaque!</p>
+        </div>
+        <div class="img-header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB6pVaBUIyOAUDLR2lI3Gc1D_rMLuBe9iww&s" alt="">
+        </div>
+    </div>
+    <div class="section1">
+        <div class="content1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores maxime quae dignissimos porro iusto quidem aspernatur nihil a, ducimus odio unde nostrum enim? Laudantium, laborum beatae. Optio, quae quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem at sit iusto nobis esse vero nihil corrupti eum. Odit aperiam quae nesciunt excepturi dignissimos, unde eum deleniti fugit ipsam maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae repudiandae animi adipisci explicabo officiis voluptatem quas possimus optio et. Saepe beatae commodi, maiores deserunt asperiores minus culpa repellat voluptatibus quidem.</p>
+        </div>
+        <div class="content2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, quaerat? Minima magni in inventore molestiae quis rem. Praesentium doloribus nesciunt at, voluptatum repudiandae quia, architecto, ratione vel illum doloremque harum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, laudantium! Impedit recusandae at, exercitationem, itaque nisi asperiores error voluptatem quasi nesciunt temporibus quaerat eos praesentium nulla beatae sed animi provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vitae perspiciatis praesentium recusandae. Fuga, iste ea id maxime sunt ad aliquam quos tenetur esse, dolore culpa sit, fugit cumque assumenda.</p>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="content-section2">
+            <h2>Porque escolher o Typescript?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at iste eaque eveniet reprehenderit laboriosam asperiores officiis porro, doloribus accusamus debitis tempora adipisci corrupti magnam reiciendis ea, voluptate ad veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi quos, quas, aspernatur sapiente quae veniam iusto veritatis atque exercitationem commodi ipsum, optio sit nobis ex libero. Autem, quae vitae.</p>
+        </div>
+        <div class="img-section2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB6pVaBUIyOAUDLR2lI3Gc1D_rMLuBe9iww&s" alt="">
+        </div>
+    </div>
+    <div class="section3">
+        <h2>Vantagens e Desvantagens <br> do Typescript</h2>
+        <div class="content-section3" (click)="VantagensOpen()">
+            <div class="cards-vantagens" [style.width]="VantagensWidth">
+                <h3>Vantagens</h3>
+                <div class="cards" *ngIf="VantagensIsOpen">
+                    <app-card-vantagens
+                    title="Velocidade"
+                    desc="O TypeScript é rápido na detecção de erros ao usar tipagem estática e compilar rapidamente para JavaScript, mantendo alto desempenho sem afetar a velocidade de execução das aplicações."
+                    img="assets/imgs/noteFast.png"
+                    img2="assets/backgrounds/bgYellow.png"
+                    color="#EBE3C3"
+                    ></app-card-vantagens>
+                    <app-card-vantagens
+                    title="Segurança"
+                    desc="A segurança do TypeScript vem da tipagem estática, que previne erros para garantir que variações e funções sejam usadas corretamente durante o desenvolvimento, tornando o código mais robusto e confiável."
+                    img="assets/imgs/noteSecurity.png"
+                    img2="assets/backgrounds/bgBlue.png"
+                    color="#D0D9E4"
+                    ></app-card-vantagens>
+                    <app-card-vantagens
+                    title="Visibilidade e Disponibilidade"
+                    desc="TypeScript é um superconjunto de JavaScript, o que significa que todo código JavaScript válido é também código TypeScript. Ele compila para JavaScript puro, garantindo compatibilidade com navegadores e ferramentas modernas, e suporta padrões recentes do ECMAScript, facilitando a tarefa."
+                    img="assets/imgs/noteOthers.png"
+                    img2="assets/backgrounds/bgGreen.png"
+                    color="#D0E0D0"
+                    ></app-card-vantagens>
+                </div>
+            </div>
+        </div>
+        <div class="content-section3" (click)="DesvantagensOpen()">
+            <div class="cards-vantagens" [style.width]="DesvantagensWidth">
+                <h3>Desvantagens</h3>
+                <div class="cards" *ngIf="DesvantagensIsOpen">
+                    <app-card-desvantagens
+                    title="Curva de Aprendizado"
+                    desc="A adição de tipagem estática exige que os desenvolvedores aprendam novos conceitos, aumentando o tempo necessário para dominar a linguagem."
+                    img="assets/imgs/noteCurva.png"
+                    img2="assets/backgrounds/bgRed.png"
+                    color="#F28C97"
+                    ></app-card-desvantagens>
+                    <app-card-desvantagens
+                    title="Tempo de Compilação"
+                    desc="O processo de compilação do TypeScript pode ser mais lento do que o JavaScript puro, especialmente em projetos grandes."
+                    img="assets/imgs/noteTempo.png"
+                    img2="assets/backgrounds/bgOrange.png"
+                    color="#F2C28C"
+                    ></app-card-desvantagens>
+                    <app-card-desvantagens
+                    title="Menor Flexibilidade"
+                    desc="A tipagem estática pode limitar a flexibilidade do código em algumas situações, exigindo mais detalhes sobre os tipos das variáveis."
+                    img="assets/imgs/noteRigido.png"
+                    img2="assets/backgrounds/bgPurple.png"
+                    color="#C8B3FF"
+                    ></app-card-desvantagens>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
