@@ -16,6 +16,7 @@
 .container > .itens-menu__container > .itens {
     display: flex;
     gap: 15px;
+    list-style: none;
 }
 
 .container > .itens-menu__container > .itens > li > a {

@@ -1,6 +1,6 @@
 <div class="container" (click)="close()" [style.width]="width">
     <div class="img">
-        <img [src]="img" [alt]="title">
+        <img [src]="img" [style.background-color]="imgColor" [alt]="title">
     </div>
     <div class="content">
         <h1 *ngIf="isOpen">{{ title }}</h1>

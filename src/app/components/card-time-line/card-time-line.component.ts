@@ -11,6 +11,7 @@ export class CardTimeLineComponent implements OnInit {
   @Input() title:string = ''
   @Input() desc:string = ''
   @Input() img:string = ''
+  @Input() imgColor:string = ''
 
   constructor() { }
 

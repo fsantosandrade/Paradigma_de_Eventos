@@ -3,14 +3,11 @@
     <div class="header">
         <div class="content-header">
             <h2>O que é Paradigma?</h2>
-            <p>Dentro da computação, um paradigma de programação refere-se ao estilo ou
-                abordagem adotada para resolver problemas e organizar a lógica de um programa.
-                Cada paradigma oferece um conjunto de princípios e práticas que determinam como
-                o código é estruturado, como as soluções são desenvolvidas e como os
+            <p>Dentro da <strong>computação</strong>, um <strong>paradigma de programação</strong> refere-se ao estilo ou abordagem adotada para resolver problemas e organizar a lógica de um programa. Cada paradigma oferece um conjunto de princípios e práticas que determinam como o código é estruturado, como as soluções são desenvolvidas e como os
             programadores interagem com as máquinas.</p>
         </div>
         <div class="img-header">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB6pVaBUIyOAUDLR2lI3Gc1D_rMLuBe9iww&s" alt="">
+            <img src="assets/imgs/paradigma1.png" alt="">
         </div>
     </div>
     <div class="section2">
@@ -25,7 +22,7 @@
                 </p>
         </div>
         <div class="img-section2">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB6pVaBUIyOAUDLR2lI3Gc1D_rMLuBe9iww&s" alt="">
+            <img src="assets/imgs/paradigma3.png" alt="">
         </div>
     </div>
     <div class="linha-do-tempo">
@@ -35,36 +32,93 @@
             <div class="cards">
                 <img src="assets/utils/line.png" class="line" alt="">
                 <app-card-time-line class="card1"
-                title="titulo"
-                desc="asbkasjbldka as dsd sad asdsadas dsa"
-                img="assets/imgs/map.png"
+                title="1960-1970"
+                desc="As primeiras interfaces gráficas de usuário (GUIs) surgiram como resultado de pesquisas que buscavam tornar a interação com computadores mais intuitiva e natural."
+                img="assets/imgs/cards/time-line1.png"
+                imgColor="#00A8FC"
                 ></app-card-time-line>
                 <app-card-time-line-reverse class="card2"
-                title="titulo"
-                desc="asbkasjbldka as dsd sad asdsadas dsa"
-                img="assets/imgs/map.png"
+                title="1970"
+                desc="O Xerox Alto foi um dos primeiros computadores a ter uma interface gráfica intuitiva, usando janelas e comandos baseados em eventos, como cliques."
+                img="assets/imgs/cards/time-line2.png"
+                imgColor="#FF3D7A"
                 ></app-card-time-line-reverse>
                 <app-card-time-line class="card1"
-                title="titulo"
-                desc="asbkasjbldka as dsd sad asdsadas dsa"
-                img="assets/imgs/map.png"
+                title="1980s"
+                desc="O Macintosh da Apple, lançado em 1984, revolucionou a computação pessoal ao popularizar as interfaces gráficas intuitivas."
+                img="assets/imgs/cards/time-line3.png"
+                imgColor="#9246F1"
                 ></app-card-time-line>
                 <app-card-time-line-reverse class="card2"
-                title="titulo"
-                desc="asbkasjbldka as dsd sad asdsadas dsa"
-                img="assets/imgs/map.png"
+                title="1990"
+                desc="Nos anos 90, sistemas e frameworks consolidaram o uso da programação orientada a eventos, permitindo a criação de aplicativos mais interativos."
+                img="assets/imgs/cards/time-line4.png"
+                imgColor="#00CBDF"
                 ></app-card-time-line-reverse>
                 <app-card-time-line class="card1"
-                title="titulo"
-                desc="asbkasjbldka as dsd sad asdsadas dsa"
-                img="assets/imgs/map.png"
+                title="1995"
+                desc="A web trouxe uma nova era para a programação orientada a eventos, com o JavaScript sendo lançado em 1995. Eventos como cliques, links, formulários e mudanças no DOM são centrais na web."
+                img="assets/imgs/cards/time-line5.png"
+                imgColor="#00A7F9"
                 ></app-card-time-line>
                 <app-card-time-line-reverse class="card2"
-                title="titulo"
-                desc="asbkasjbldka as dsd sad asdsadas dsa"
-                img="assets/imgs/map.png"
+                title="2000-2020"
+                desc="A orientação a eventos foi aplicada também em sistemas backend. A arquitetura baseada em eventos começou a ser usada para sistemas de alta escalabilidade, com frameworks como Node.js"
+                img="assets/imgs/cards/time-line6.png"
+                imgColor="#FF3F7C"
                 ></app-card-time-line-reverse>
             </div>
         </div>
+    </div>
+    <div class="section3">
+        <h2>Como funciona?</h2>
+        <ul class="topicos">
+            <li>
+                <h3>Um evento acontece (como um clique):</h3>
+                <p>Em um sistema orientado a eventos, tudo começa com uma ação que ocorre no mundo real ou no ambiente digital. Isso pode ser um <strong>clique do mouse, toque na tela</strong>, ou mesmo uma mensagem enviada entre sistemas. Esses eventos podem vir de interações do usuário (como digitar ou clicar) ou de outras fontes, como sensores ou outros programas que disparam eventos automaticamente.</p>
+            </li>
+            <li>
+                <h3>O programa tem um listener (ou ouvinte), que está esperando esse evento:</h3>
+                <p>O listener é um pedaço de código que <strong>fica atento</strong>, esperando que algo específico aconteça. Ele é configurado para monitorar um tipo de evento, como um clique de botão ou a movimentação do mouse. Ele não faz nada até que o evento esperado ocorra. Pense nele como um porteiro que só age quando alguém toca a campainha.</p>
+            </li>
+            <li>
+                <h3>Quando o evento ocorre, o listener executa alguma ação (como abrir uma nova janela ou enviar um dado):</h3>
+                <p>Assim que o evento ocorre, o listener "acorda" e chama uma função ou um bloco de código, chamado de <strong>handler (manipulador)</strong>. O handler é responsável por realizar a ação desejada. Por exemplo, se você clicar em um botão para enviar um formulário, o listener vai acionar o handler que envia os dados para o servidor ou exibe uma mensagem de confirmação. Dependendo do sistema, o listener pode lidar com vários eventos simultaneamente, permitindo que o programa execute várias ações ao mesmo tempo.</p>
+            </li>
+            <li>
+                <h3>Loops de eventos e sistemas assíncronos:</h3>
+                <p>Em muitos casos, há um <strong>loop de eventos</strong> em segundo plano, que fica monitorando todos os eventos que estão acontecendo e encaminhando-os para o listener correto. Em sistemas mais complexos, como jogos ou servidores web, esses loops lidam com uma grande quantidade de eventos ao mesmo tempo, garantindo que as respostas sejam rápidas e não bloqueiem outras ações.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="section4">
+        <h2>Para que serve?</h2>
+        <ul class="topicos">
+            <li>
+                <h3>Interfaces gráficas de usuário (GUIs):</h3>
+                <p>Em sistemas operacionais como <strong>Windows, macOS, e Linux</strong>, ou aplicativos de desktop, a programação orientada a eventos é usada para gerenciar a interação com o usuário. Cada clique em um botão, cada arraste de uma janela, ou cada seleção de menu é um evento que o sistema processa em tempo real. A maioria das linguagens de programação que criam interfaces gráficas, como <strong>Java (Swing), C# (Windows Forms), e Python (Tkinter)</strong>, se baseia nesse paradigma para tornar a experiência do usuário interativa.
+                </p>
+            </li>
+            <li>
+                <h3>Aplicações web:</h3>
+                <p>A programação orientada a eventos é central para o desenvolvimento web moderno. Linguagens como <strong>JavaScript</strong> dominam a criação de interações em sites, desde animações e transições até o envio de formulários ou notificações em tempo real. Quando você navega por um site e interage com ele, o navegador captura os eventos, como cliques e rolagens de página, e usa JavaScript para decidir como reagir, seja mostrando um conteúdo dinâmico ou carregando mais informações.
+                </p>
+            </li>
+            <li>
+                <h3>Sistemas complexos e tempo real:</h3>
+                <p>Grandes plataformas que lidam com muitos usuários e dados simultaneamente, como o <strong>WhatsApp</strong> ou sistemas de <strong>streaming de vídeo</strong> (Netflix, YouTube), dependem de eventos para processar mensagens, vídeos, e interações de forma rápida e eficiente. Um sistema de mensagens como o WhatsApp, por exemplo, deve ser capaz de lidar com milhões de mensagens em tempo real, enviando-as aos destinatários quase instantaneamente. Para isso, a arquitetura de backend desses sistemas é baseada em eventos, o que garante alta escalabilidade e desempenho.
+                </p>
+            </li>
+            <li>
+                <h3>Arquiteturas distribuídas e microsserviços:</h3>
+                <p>Em grandes sistemas corporativos, a arquitetura orientada a eventos é usada para gerenciar a comunicação entre diferentes partes do sistema. Isso é muito comum em arquiteturas de <strong>micro serviços</strong>, onde cada serviço é independente e se comunica com os outros por meio de eventos. Esses eventos podem ser disparados quando uma tarefa é concluída, como a aprovação de um pagamento, e então o sistema sabe que pode continuar com a próxima etapa.
+                </p>
+            </li>
+            <li>
+                <h3>Sistemas reativos e IoT:</h3>
+                <p>A <strong>programação reativa</strong> se baseia no processamento contínuo de eventos e fluxos de dados. É uma abordagem moderna, aplicada em sistemas que precisam responder de forma rápida e eficiente a grandes volumes de dados. Isso também é amplamente usado na Internet <strong>das Coisas (IoT)</strong>, onde dispositivos como sensores e câmeras enviam dados constantemente para um sistema central, que reage a esses eventos em tempo real.</p>
+            </li>
+        </ul>
+        <p>Essa forma de programação é crucial em muitos tipos de software, porque permite que os programas <strong>reajam imediatamente às ações dos usuários</strong> ou <strong>eventos externos</strong>, tornando-os mais dinâmicos e responsivos.</p>
     </div>
 </div>
