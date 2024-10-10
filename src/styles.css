@@ -9,14 +9,20 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1, h2 {
+    color: var(--primary-color);
+}
+
 :root {
     --primary-color: #2C414C;
     --secondary-color: #ffffa3;
     --terciary-color: #888888;
 
     --background-color: #eaeceea2;
+    --background-secondary-color: #dadada;
 
-    --details-color: #c5c500;
+    --details-color: #fffb1b;
+    --secondary-details-color: #FBBA00;
 
     --border-color: #cfd4d6;
 }

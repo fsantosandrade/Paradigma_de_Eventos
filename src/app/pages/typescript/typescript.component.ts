@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-typescript',
@@ -10,10 +10,10 @@ export class TypescriptComponent implements OnInit {
   VantagensWidth: string = "30%"
   DesvantagensIsOpen: boolean = false
   DesvantagensWidth: string = "30%"
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {
 
-  ngOnInit(): void {
   }
 
   VantagensOpen() {

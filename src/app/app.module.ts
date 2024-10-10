@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -11,6 +12,7 @@ import { CardVantagensComponent } from './components/card-vantagens/card-vantage
 import { CardDesvantagensComponent } from './components/card-desvantagens/card-desvantagens.component';
 import { CardTimeLineComponent } from './components/card-time-line/card-time-line.component';
 import { CardTimeLineReverseComponent } from './components/card-time-line-reverse/card-time-line-reverse.component';
+import { CardCronologiaComponent } from './components/card-cronologia/card-cronologia.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { CardTimeLineReverseComponent } from './components/card-time-line-revers
     CardVantagensComponent,
     CardDesvantagensComponent,
     CardTimeLineComponent,
-    CardTimeLineReverseComponent
+    CardTimeLineReverseComponent,
+    CardCronologiaComponent
   ],
   imports: [
     BrowserModule,

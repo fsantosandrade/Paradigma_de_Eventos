@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ParadigmaComponent } from './pages/paradigma/paradigma.component';
 import { TypescriptComponent } from './pages/typescript/typescript.component';
+import { CardCronologiaComponent } from './components/card-cronologia/card-cronologia.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: "full" },

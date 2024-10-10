@@ -1,0 +1,45 @@
+.container {
+    cursor: pointer;
+    border-radius: 30px;
+    height: 200px;
+
+    & .balao, .content {
+        box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.308);
+        background: url(../../../assets/backgrounds/bg4.png) var(--details-color) center no-repeat;
+        background-size: cover;
+        width: 250px;
+        height: 200px;
+        position: relative;
+        border-radius: 30px;
+        transition: .3s ease;
+        padding: 15px;
+    }
+
+    & .balao {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        & span {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    }
+
+    & .content {
+        color: var(--primary-color);
+        text-align: center;
+        
+        & h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        & p {
+            font-size: .75rem;
+        }
+    }
+}
