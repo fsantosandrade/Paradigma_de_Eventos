@@ -13,6 +13,8 @@ import { CardDesvantagensComponent } from './components/card-desvantagens/card-d
 import { CardTimeLineComponent } from './components/card-time-line/card-time-line.component';
 import { CardTimeLineReverseComponent } from './components/card-time-line-reverse/card-time-line-reverse.component';
 import { CardCronologiaComponent } from './components/card-cronologia/card-cronologia.component';
+import { ProjectComponent } from './pages/project/project.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { CardCronologiaComponent } from './components/card-cronologia/card-crono
     CardDesvantagensComponent,
     CardTimeLineComponent,
     CardTimeLineReverseComponent,
-    CardCronologiaComponent
+    CardCronologiaComponent,
+    ProjectComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
