@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card-time-line-reverse.component.css']
 })
 export class CardTimeLineReverseComponent implements OnInit {
-  isOpen:boolean = true 
-  width:string = "430px"
+  isOpen:boolean = false 
+  width:string = "120px"
   @Input() title:string = ''
   @Input() desc:string = ''
   @Input() img:string = ''

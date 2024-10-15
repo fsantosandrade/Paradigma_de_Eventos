@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card-time-line.component.css']
 })
 export class CardTimeLineComponent implements OnInit {
-  isOpen:boolean = true 
-  width:string = "450px"
+  isOpen:boolean = false 
+  width:string = "120px"
   @Input() title:string = ''
   @Input() desc:string = ''
   @Input() img:string = ''

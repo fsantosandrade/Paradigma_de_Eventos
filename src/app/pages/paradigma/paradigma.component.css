@@ -80,29 +80,42 @@
     font-weight: bold;
 }
 
-.container > .linha-do-tempo > .time-line > .cards {
+.container > .linha-do-tempo > .time-line > .cards1 {
     display: flex;
     flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 125px;
+    width: 450px;
 }
 
-.container > .linha-do-tempo > .time-line > .cards > .line {
+.container > .linha-do-tempo > .time-line > .cards2 {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    gap: 125px;
+    transform: translateY(-490px) translateX(-225px);
+    width: 450px;
+}
+
+.container > .linha-do-tempo > .time-line > .cards1 > .line {
     position: absolute;
     right: 47%;
     width: 108px;
 }
 
-.container > .linha-do-tempo > .time-line > .cards > .card1 {
+.container > .linha-do-tempo > .time-line > .cards1 > .card1 {
     position: relative;
     left: 250px;
 }
 
-.container > .linha-do-tempo > .time-line > .cards > .card2 {
+.container > .linha-do-tempo > .time-line > .cards2 > .card2 {
     position: relative;
-    right: 250px;
+    right: 50px;
 }
 
 .container > .section3 {
-    margin-top: 200px;
+    margin-top: -250px;
 }
 
 .container > .section3 > h2 {
