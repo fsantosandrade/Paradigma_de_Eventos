@@ -1,6 +1,7 @@
 {
   "name": "paradigma-orientado-a-eventos",
   "version": "0.0.0",
+  "description": "Um projeto web para a explicação do Paradigma de Eventos utilizando como base o TypeScript, dividido em sessões e feito para o projeto ministrado pelo UDF - Universidade do Distrito Federal.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
