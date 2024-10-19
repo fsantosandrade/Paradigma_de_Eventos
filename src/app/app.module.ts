@@ -15,6 +15,11 @@ import { CardTimeLineReverseComponent } from './components/card-time-line-revers
 import { CardCronologiaComponent } from './components/card-cronologia/card-cronologia.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { AboutComponent } from './pages/about/about.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardIntroComponent } from './components/card-intro/card-intro.component';
+import { CardIntroVideoComponent } from './components/card-intro-video/card-intro-video.component';
+import { ReturnButtonComponent } from './components/return-button/return-button.component';
+
 
 @NgModule({
   declarations: [
@@ -29,11 +34,15 @@ import { AboutComponent } from './pages/about/about.component';
     CardTimeLineReverseComponent,
     CardCronologiaComponent,
     ProjectComponent,
-    AboutComponent
+    AboutComponent,
+    CardIntroComponent,
+    CardIntroVideoComponent,
+    ReturnButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -24,37 +24,40 @@
     }
 
     & .integrantes > h1 {
-        margin-bottom: 25px;
         text-align: center;
+        margin-bottom: 20px;
     }
 
-    & .integrantes > ul {
-        display: flex;
-        text-align: center;
-        gap: 20px;
-        background: var(--secondary-color);
+    & .integrantes > table > tbody {
         padding: 40px;
-        border-radius: 25px;
-        list-style: none;
-        margin-bottom: 50px;
-        box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.425);
+
+        & tr > td {
+            text-align: center;
+            padding: 0 20px;
+        }
     }
 
     & .refs {
+        margin-top: 20px;
         display: flex;
         gap: 50px;
 
         & .refs-bibliograficas, .refs-artigos-livros {
-            background-color: var(--secondary-color);
             padding: 40px 40px;
             width: 600px;
             border-radius: 25px;
-            box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.425);
             z-index: 2;
 
             & h2 {
-                margin-bottom: 8px;
+                padding-bottom: 15px;
+                margin-bottom: 25px;
+                border-bottom: 3px solid var(--primary-color);
                 font-size: 1.5rem;
+            }
+
+            & li {
+                margin-left: 15px;
+                font-size: .78rem;
             }
 
             & a {

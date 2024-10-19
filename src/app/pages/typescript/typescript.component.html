@@ -1,6 +1,24 @@
-<div class="container">
-    <h1>Typescript</h1>
-    <div class="header">
+<div class="container" [@staggeredAnimation]>
+    <h1 class="animate-me">Typescript</h1>
+    <div class="introduction animate-me" *ngIf="false">
+        <app-card-intro
+        title="HTML"
+        img="assets/imgs/wolf1.jpg"
+        ></app-card-intro>
+        <app-card-intro
+        title="HTML + CSS"
+        img="assets/imgs/wolf2.jpg"
+        ></app-card-intro>
+        <app-card-intro-video
+        title="HTML + CSS + JS"
+        video="assets/imgs/wolf3.mp4"
+        ></app-card-intro-video>
+        <app-card-intro-video
+        title="HTML + CSS + TS"
+        video="assets/imgs/wolf4.mp4"
+        ></app-card-intro-video>
+    </div>
+    <div class="header animate-me">
         <div class="content-header">
             <h2>O que é?</h2>
             <p>TypeScript (TS) é um superset, ou seja, uma extensão do JavaScript que agrega tipagem estática – por isso seu nome “type”, proporcionando um sistema de tipos mais robusto e expressivo. Ao adicionar tipos às variáveis, funções e objetos, o TS permite que o compilador detecte erros de tipo em tempo de desenvolvimento, antes que eles se manifestem em tempo de execução. Essa característica contribui para a criação de código mais confiável e manutenível. Ele foi projetado para auxiliar no desenvolvimento de códigos simples até os mais complexos, utilizando os princípios de Orientação a Objetos, como classes, tipagens, interfaces, Generics, entre outros. (DA SILVA ADRIANO, 2021).
@@ -10,7 +28,7 @@
             <img src="assets/imgs/typescript-placeholder.png" alt="typescript">
         </div>
     </div>
-    <div class="section1">
+    <div class="section1 animate-me">
         <div class="content1">
             <p>O principal objetivo do TypeScript é elevar o nível do código JavaScript, que anteriormente era usado somente no lado cliente, em código relativamente simples e pequenos, mas a possibilidade de aplicar uma arquitetura mais solida e melhores práticas de programação, nos dias atuais, passaram a ser importantes para a linguagem.
             </p>
@@ -22,12 +40,12 @@
             <p>A adoção do TypeScript em nosso projeto se justifica pela sua capacidade de melhorar a qualidade do código, facilitar a colaboração em equipes e reduzir o tempo gasto com a depuração de erros. A tipagem estática, combinada com as ferramentas e a comunidade do TypeScript, proporcionam um ambiente de desenvolvimento mais produtivo e eficiente.</p>
         </div>
     </div>
-    <aside class="javascript">
+    <aside class="javascript animate-me">
         <h2>JavaScript</h2>
         <img src="https://kbase.com.br/novo/wp-content/uploads/2019/06/linguagem-JavaScript.jpg" alt="">
         <p>JavaScript é a linguagem de programação mais popular atualmente, de acordo com o TecMundo. Oferecendo um ambiente de programação dinâmico e flexível. Com tipagem dinâmica fraca e suporte a múltiplos paradigmas (protótipos, orientado a objetos, imperativo e funcional), JS permite criar aplicações complexas e interativas. Sua integração com HTML e CSS o torna a tecnologia central para o desenvolvimento front-end, enquanto Node.js expande suas capacidades para o back-end. Características como closures e funções de alta ordem, juntamente com APIs para manipulação de DOM, texto, datas e expressões regulares, fazem do JavaScript uma ferramenta versátil e poderosa para desenvolvedores web.</p>
     </aside>
-    <div class="section2">
+    <div class="section2 animate-me">
         <div class="content-section2">
             <div class="content">
                 <h2>Porque escolher o Typescript?</h2>
@@ -40,11 +58,11 @@
         </div>
         <p>tipos de dados, o código se torna mais autoexplicativo, facilitando a colaboração em equipe e a integração de novos membros. A redução de erros em tempo de execução e a melhoria da qualidade do código compensam o esforço inicial. Além disso, a tipagem permite que as ferramentas de desenvolvimento ofereçam recursos avançados, como autocompletar e refatoração, aumentando a produtividade dos desenvolvedores. A longo prazo, a tipagem contribui para a criação de bases de código mais robustas e escaláveis, alinhadas com as melhores práticas de desenvolvimento.</p>
     </div>
-    <div class="section3">
+    <div class="section3 animate-me">
         <h2>História</h2>
         <p>O TypeScript começou a ser desenvolvido internamente em 2010 e divulgado pela primeira vez em outubro de 2012 (na versão 0.8), após dois anos de desenvolvimento interno na Microsoft. O time foi liderado pelo renomado engenheiro de software Anders Hejlsberg. Passando por uma evolução constante, marcando milestones importantes como o lançamento do TypeScript 1.0 em 2014 e a migração para o GitHub no mesmo ano. Ao longo dos anos, a linguagem incorporou recursos como tipos genéricos, tipagem nula opcional, expressões spread e custom JSX factories, tornando-se uma ferramenta poderosa para o desenvolvimento web. Atualmente, o TypeScript é amplamente utilizado e suportado por diversas IDEs, consolidando sua posição como uma linguagem robusta e escalável.</p>
 
-        <div class="cronologia">
+        <div class="cronologia animate-me">
             <h2>Cronologia</h2>
             <div class="cards">
                 <div class="card-section1">
@@ -98,16 +116,31 @@
             </div>
         </div>
     </div>
-    <div class="section4">
+    <div class="section4 animate-me">
         <h2>Anders Heijlsberg</h2>
         <p>Um dos principais responsáveis da programação e dos avanços tecnológicos, Anders é um engenheiro de software dinamarquês que ganhou prestígio no mundo da tecnologia e inovação. Ele começou a escrever programas para o microcomputador Nascom, incluindo um compilador Pascal que foi inicialmente comercializado como o Blue Label Software Pascal para o Nascom-2. No entanto, ele logo o reescreveu para CP/M e DOS, comercializando-o primeiro como Compas Pascal e depois como PolyPascal. Posteriormente, o produto foi licenciado para a Borland e integrado a um IDE para se tornar o sistema Turbo Pascal. Entre 1989 e 1996, atuando como engenheiro na Borland – Empresa de software com sede em Austin, Texas, Estados Unidos. Foi responsável pelo desenvolvimento do Turbo Pascal e do Delphi. Posteriormente, assumiu a posição de engenheiro-chefe. Após uma trajetória de sucesso na Borland, migrou para a Microsoft em 1996. Lá, esteve à frente do desenvolvimento de linguagens como J++ e C#, sendo um dos principais arquitetos da plataforma .NET. 
         </p>
         <img src="https://www.computerworld.dk/fil/123089?width=600&height=337&focus=1" alt="Anders Heijlsberg">
         <p>Em 2001, Hejlsberg foi laureado com o prêmio Dr. Dobb's – foi um prêmio anual concedido a indivíduos que, na opinião dos editores do Diário do Dr. Dobb, "fizeram contribuições significativas para o avanço do desenvolvimento de software." – Por dar incremento às linguagens como Turbo Pascal, Delphi e C#. Em 2007, junto com sua equipe, recebeu outro reconhecimento por seus trabalhos em C#.</p>
     </div>
-    <div class="sectionX">
+    <div class="section5 animate-me">
+        <h2>Sintaxe</h2>
+        <p>O TypeScript é uma linguagem que estende o JavaScript, porém adicionando tipos estáticos e outros recursos encontrados em linguagens como Java, C# ou outras linguagens. O princípio é tornar o código mais robusto, facilitando a detecção de erros durante o desenvolvimento de um algorítimo.
+        </p>
+        <h3>Pontos principais da sintaxe do Typescript:</h3>
+        <ul>
+            <li><strong>Declaração de Tipos:</strong> Diferente do JavaScript, no TypeScript você pode especificar o tipo das variáveis (como string, number, boolean). Isso ajuda a garantir que as variáveis sejam usadas corretamente.</li>
+            <li><strong>Funções com Tipos:</strong> Assim como em linguagens fortemente tipadas, no TypeScript você pode definir o tipo dos parâmetros e o tipo de retorno das funções, evitando erros de uso.</li>
+            <li><strong>Interfaces:</strong> TypeScript tem interfaces que funcionam como contratos para objetos, garantindo que eles tenham a estrutura esperada. Isso é parecido com interfaces em Java ou C#, mas aplicadas diretamente aos tipos de dados.</li>
+            <li><strong>Classes e Herança:</strong> A sintaxe de classes no TypeScript é semelhante à de outras linguagens orientadas a objetos. Diferente do JavaScript puro, existe controle para a visibilidade para a  visibilidade (pública, privada ou protegida para os atributos e métodos. Classes e Herança: A sintaxe de classes no TypeScript é semelhante à de outras linguagens orientadas a objetos. Diferente do JavaScript puro, existe controle para a visibilidade para a  visibilidade (pública, privada ou protegida para os atributos e métodos.</li>
+            <li><strong>Enums:</strong> Conjuntos de valores constantes, como em C ou Java, permitindo que você use nomes legíveis em vez de números ou strings fixas. Enums: Conjuntos de valores constantes, como em C ou Java, permitindo que você use nomes legíveis em vez de números ou strings fixas.</li>
+            <li><strong>Union Types:</strong> Outra particularidade do TypeScript é a capacidade de definir que uma variável pode ser de mais de um tipo (ex: pode ser um number ou uma string), algo que não é comum em muitas linguagens estáticas.</li>
+            <li><strong>Generics:</strong> Assim como em C++ ou Java, o TypeScript tem suporte a generics, permitindo criar funções e classes que funcionam com diferentes tipos, mas mantendo a segurança de tipo.</li>
+        </ul>
+    </div>
+    <div class="section6 animate-me">
         <h2>Vantagens e Desvantagens <br> do Typescript</h2>
-        <div class="content-sectionX" (click)="VantagensOpen()">
+        <div class="content-section6" (click)="VantagensOpen()">
             <div class="cards-vantagens" [style.width]="VantagensWidth">
                 <h3>Vantagens</h3>
                 <div class="cards" *ngIf="VantagensIsOpen">
@@ -135,7 +168,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-sectionX" (click)="DesvantagensOpen()">
+        <div class="content-section6" (click)="DesvantagensOpen()">
             <div class="cards-vantagens" [style.width]="DesvantagensWidth">
                 <h3>Desvantagens</h3>
                 <div class="cards" *ngIf="DesvantagensIsOpen">
