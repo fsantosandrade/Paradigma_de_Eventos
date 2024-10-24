@@ -1,7 +1,7 @@
 # Paradigma Orientado a Eventos 🌐
 
 ## Descrição 
-Um projeto web para a explicação do Paradigma de Eventos utilizando como base o TypeScript, dividido em sessões e feito para o projeto ministrado pelo UDF - Universidade do Distrito Federal.
+Um projeto web para a explicação do Paradigma de Eventos utilizando como base o TypeScript, dividido em sessões e feito para a finalidade do projeto passado pela UDF - Universidade do Distrito Federal na disciplina de Paragigmas de Linguagem de Programação.
 
 ## Funcionalidades ⚙️
 - **Explicar o Paradigma de Eventos:** O projeto é estruturado para ilustrar os conceitos e a aplicação do paradigma orientado a eventos.

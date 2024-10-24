@@ -16,8 +16,6 @@ import { CardCronologiaComponent } from './components/card-cronologia/card-crono
 import { ProjectComponent } from './pages/project/project.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CardIntroComponent } from './components/card-intro/card-intro.component';
-import { CardIntroVideoComponent } from './components/card-intro-video/card-intro-video.component';
 import { ReturnButtonComponent } from './components/return-button/return-button.component';
 
 
@@ -35,8 +33,6 @@ import { ReturnButtonComponent } from './components/return-button/return-button.
     CardCronologiaComponent,
     ProjectComponent,
     AboutComponent,
-    CardIntroComponent,
-    CardIntroVideoComponent,
     ReturnButtonComponent
   ],
   imports: [
